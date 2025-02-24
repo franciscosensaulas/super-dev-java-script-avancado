@@ -1,12 +1,11 @@
 let tabelaEmpresas = document.getElementById("tabela-empresas");
-let urlAPI = "https://public.franciscosensaulas.com"
 let botaoConsultarEmpresas = document.getElementById("consultar-empresas");
 
 // Função responsável por fazer o request(requisição) para carregar os dados da empresa
 async function consultarEmpresas() {
     // debugger;
-    // let url = urlAPI + "/api/empresa"
-    let url = `${urlAPI}/api/empresa`
+    // let url = urlAPI + "/api/v1/empresa"
+    let url = `${urlAPI}/api/v1/empresa`
     // fetch vai realizar a requisição, na variável resposta teremos os dados do response como: status, response em si(dados que o back-end retornou)  
     const resposta = await fetch(url);
     // Verificar se a requisição falhou por algum motivo

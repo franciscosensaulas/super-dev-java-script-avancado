@@ -30,7 +30,10 @@ async function apagar() {
 }
 
 async function apagarEmpresa() {
-    let url = `${urlAPI}/api/empresa`
+    let id = 45;
+    let url = `${urlAPI}/api/v1/empresa/${id}`
+    console.log(url);
+    
 
 
     Swal.fire({
