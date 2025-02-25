@@ -36,7 +36,7 @@ async function salvar(e) {
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(dados)
     });
-
+    
     if(resposta.ok == false){
         alert("Não foi possível cadastrar")
     }else{
